@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Build') {
+            steps {
+                // Corrected typo: 'appication' -> 'application'
+                echo 'Building the application'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                // Corrected typo: 'Runing' -> 'Running'
+                echo 'Running tests'
+            }
+        }
+    
+        // Corrected typo: 'Deoloy' -> 'Deploy'
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the app'
+            }
+        }
+    }
+}
